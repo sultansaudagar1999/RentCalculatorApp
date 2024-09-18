@@ -27,5 +27,6 @@ def calculate_rent():
     # Send back the result as JSON
     return jsonify({'result': round(cost_per_person, 2)})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
+
